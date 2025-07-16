@@ -1,0 +1,332 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+header {
+  background-color: black;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.container .logo {
+  width: 100px;
+  padding: 10px 0;
+}
+.container .logo img {
+  width: 100%;
+}
+.container .navbar {
+  width: 1440px;
+  margin-left: -120px;
+  padding: 0 120px;
+  background-color: rgb(230, 0, 0);
+}
+.container .navbar .nav-list {
+  display: flex;
+}
+.container .navbar .nav-list .nav-item .nav-link {
+  height: 60px;
+  padding: 15px 15px;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+}
+.container .navbar .nav-list .nav-item .icon {
+  height: 100%;
+  background-color: rgb(200, 0, 0);
+  align-content: center;
+}
+.hero-section .container {
+  padding: 25px 0;
+}
+.hero-section .container .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.hero-section .container .row .col-9 {
+  width: 75%;
+  height: 520px;
+  background-color: aquamarine;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+.hero-section .container .row .col-9 .col-6 {
+  background-repeat: no-repeat;
+  background-position: 0px -10px;
+  background-size: cover;
+  background-image: url("../img/4.jpg");
+  width: 66%;
+  height: 260px;
+  background-color: black;
+}
+.hero-section .container .row .col-9 .content {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-content: flex-end;
+  padding: 20px 20px 0 20px;
+  position: relative;
+}
+.hero-section .container .row .col-9 .content span {
+  width: 585px;
+  height: 50px;
+  padding: 5px 20px 20px;
+  color: white;
+  font-size: 14px;
+  display: block;
+  margin-left: -20px;
+  transition: 0.6s;
+}
+.hero-section .container .row .col-9 .col-6:hover .content span{
+  background-color: rgba(0, 0, 0, 0.3) ;
+} 
+.hero-section .container .row .col-9 .col-6:hover .content {
+  background-color: rgba(0, 0, 0,0.7) ;
+} 
+.hero-section .container .row .col-9 .col-6:first-of-type .content span::before{
+  content: 'Xiaomi ចេញរថយន្តអគ្គិសនី រូបរាងស្រដៀង Ferrari ប្រព័ន្ធទំនើបមិនចាញ់ Tesla';
+  position: absolute;
+  top: calc(50% + 7px);
+  font-size: 24px;
+  width: 545px;
+  font-weight: bold;
+  line-height: 1.4;
+  transition: 0.7s;
+}
+.hero-section .container .row .col-9 .col-6:first-of-type .content span::after{
+  content: 'ដាំដើមឈើ ក្នុងស្មារតី "ដើមឈើដើម្បីជីវិត"';
+  position: absolute;
+  font-size: 14px;
+  left: 20px;
+  bottom: 35px;
+  transition: 0.8s;
+  z-index: -1;
+}
+.hero-section .container .row .col-9 .col-6:first-of-type:hover .content span::before{
+  transform: translateY(-40px);
+  color: red;
+}
+.hero-section .container .row .col-9 .col-6:first-of-type:hover .content span::after{
+  transform: translateY(-20px);
+  z-index: 1;
+}
+.hero-section .container .row .col-9 .col-6 .content span::before{
+  content: 'ពណ៌បៃតង និងពណ៌ស្វាយ ទំនងជាពណ៌ថ្មីរបស់iPhone 17 ឆ្នាំនេះ';
+  position: absolute;
+  top: calc(50% + 7px);
+  font-size: 24px;
+  width: 530px;
+  font-weight: bold;
+  line-height: 1.4;
+  transition: 0.7s;
+}
+.hero-section .container .row .col-9 .col-6 .content span::after{
+  content: 'ពណ៌បៃតង និងពណ៌ស្វាយ ទំនងជាពណ៌ថ្មីរបស់iPhone 17 ឆ្នាំនេះ';
+  position: absolute;
+  font-size: 14px;
+  left: 20px;
+  bottom: 35px;
+  transition: 0.8s;
+  z-index: -1;
+}
+.hero-section .container .row .col-9 .col-6:hover .content span::before{
+  transform: translateY(-40px);
+  color: red;
+}
+.hero-section .container .row .col-9 .col-6:hover .content span::after{
+  transform: translateY(-20px);
+  z-index: 1;
+}
+.hero-section .container .row .col-9 .col-3:hover .content span{
+  background-color: rgba(0, 0, 0, 0.3) ;
+} 
+.hero-section .container .row .col-9 .col-3:hover .content {
+  background-color: rgba(0, 0, 0,0.7) ;
+} 
+.hero-section .container .row .col-9 .col-3 .content span::before{
+  content: 'ទូរស័ព្ទលំដាប់កណ្តាល ៥ ម៉ូដែល ប៉ុន្តែមានកាមេរ៉ាខ្លាំង ថតស្អាតដូច Flagship';
+  position: absolute;
+  top: 39%;
+  font-size: 24px;
+  width: 250px;
+  font-weight: bold;
+  line-height: 1.5;
+  transition: 0.7s;
+}
+.hero-section .container .row .col-9 .col-3 .content span::after{
+  content: 'ប៉ុន្តែមានកាមេរ៉ាខ្លាំង ថតស្អាតដូច Flagship';
+  position: absolute;
+  font-size: 14px;
+  left: 20px;
+  bottom: 35px;
+  transition: 0.8s;
+  z-index: -1;
+}
+.hero-section .container .row .col-9 .col-3:hover .content span::before{
+  transform: translateY(-40px);
+  color: red;
+}
+.hero-section .container .row .col-9 .col-3:hover .content span::after{
+  transform: translateY(-20px);
+  z-index: 1;
+}
+.hero-section .container .row .col-9 .col-3:last-of-type .content span::before{
+  content: 'Grok 3 កម្មវិធី AI ថ្មី ច្នៃដោយ Elon Musk ត្រៀមវាយយកទីផ្សា';
+  position: absolute;
+  top: 39%;
+  font-size: 24px;
+  width: 250px;
+  font-weight: bold;
+  line-height: 1.5;
+  transition: 0.7s;
+}
+.hero-section .container .row .col-9 .col-3:last-of-type .content span::after{
+  content: 'Grok 3 កម្មវិធី AI ថ្មី ច្នៃដោយ Elon Musk ';
+  position: absolute;
+  font-size: 14px;
+  left: 20px;
+  bottom: 35px;
+  transition: 0.8s;
+  z-index: -1;
+}
+.hero-section .container .row .col-9 .col-3:last-of-type:hover .content span::before{
+  transform: translateY(-40px);
+  color: red;
+}
+.hero-section .container .row .col-9 .col-3:last-of-type:hover .content span::after{
+  transform: translateY(-20px);
+  z-index: 1;
+}
+.hero-section .container .row .col-9 p::after{
+  color: white;
+  position: absolute;
+  top: 50%;
+  font-size: 25px;
+  line-height: 1.5;
+}
+.hero-section .container .row .col-9 .col-6:first-of-type {
+  background-image: url("../img/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -10px;
+  border-top: 2px solid black;
+}
+.hero-section .container .row .col-9 .col-6:first-of-type::before {
+  content: "បច្ចេកវិទ្យា";
+  padding: 5px 10px 0 10px;
+  background-color: blue;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+.hero-section .container .row .col-9 .col-6::before {
+  content: "ជីវិតនិងសង្គម";
+  padding: 5px 10px 0 10px;
+  background-color: green;
+  color: white;
+  position: absolute;
+  top: 270px;
+  left: 10px;
+  z-index: 1;
+}
+.hero-section .container .row .col-9 .col-3 {
+  width: 34%;
+  height: 260px;
+  background-color: rgb(177, 189, 185);
+  background-image: url("../img/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-section .container .row .col-9 .col-3:last-of-type {
+  background-color: rgb(177, 189, 185);
+  background-image: url("../img/5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -130px 0;
+}
+.hero-section .container .row .col-9 .col-3::after {
+  content: "កីឡា";
+  padding: 5px 10px 0 10px;
+  background-color: orange;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 595px;
+  z-index: 1;
+}
+.hero-section .container .row .col-9 .col-3:last-of-type::after {
+  content: "ជីវិតនិងសង្គម";
+  padding: 5px 10px 0 10px;
+  background-color: green;
+  color: white;
+  position: absolute;
+  top: 270px;
+  left: 595;
+  z-index: 1;
+}
+
+.hero-section .container .row > .col-3 {
+  width: 25%;
+}
+.hero-section .container .row .col-3 .col-3Top {
+  width: 100%;
+  height: 250px;
+  background-color: rgb(200, 200, 200);
+  margin-bottom: 20px;
+}
+.hero-section .container .row .col-3 .col-3Buttom {
+  width: 100%;
+  height: 250px;
+  background-color: rgb(200, 200, 200);
+}
+.breadcrumb-area .container span {
+  font-size: 22px;
+  width: 100%;
+  background-color: rgb(69, 69, 211);
+  display: block;
+}
+.breadcrumb-area{
+  margin-bottom: 100px;
+}
+.breadcrumb-area .container{
+  position: relative;
+}
+.breadcrumb-area .container span .link-seeMore {
+  color: white;
+  display: block;
+  padding: 10px 20px 0;
+}
+.breadcrumb-area .container::after{
+  content: '';
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 1037px;
+  height: 47px;
+  top: 0;
+  right: 0;
+}
+.breadcrumb-area .container::before{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 47px 23.5px 0 23.5px;
+  border-color: #ffffff transparent transparent transparent;;
+  left: 140px;
+  z-index: 1;
+  cursor: pointer;
+}
+.breadcrumb-area .container .box{
+  height: 400px;
+  background-color: white;
+  box-shadow: 1px 2px 3px gray;
+}
